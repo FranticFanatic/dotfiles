@@ -1,0 +1,1 @@
+.config/shellcfg/zsh/env

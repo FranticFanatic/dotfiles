@@ -1,9 +1,11 @@
-#Figure out a more graceful way to do this.
-#export PATH=/data/data/com.termux/files/usr/bin:/data/data/com.termux/files/usr/bin/applets:/data/data/com.termux/files/home/.local/bin
+# this file gets run in two cases:
+# 1. non-login interactive shell
+# 2. remote shell (over ssh or similar)
 
-# Load aliases.
+# #2 happens when you run "ssh user@host bash" explicitly.
+# in this case, /etc/bash.bashrc has not been previous executed (unlike #1).
+# however, we assume that #2 is a recovery mode, so we don't want to do much.
+# (also, my google-fu didn't find a way to distinguish them)
 
-FILE=~/.config/alias.sh
-if [ -f $ALIAS ]; then
-	source $ALIAS
-fi
+. ~/.config/shellcfg/bash/env
+. ~/.config/shellcfg/bash/interactive
