@@ -1,7 +1,7 @@
 # put your aliases here
 
 # Load aliases.
-FILE=~/.config/shellcfg/alias.sh
+ALIAS=~/.config/shellcfg/alias.sh
 
 if [ -f $ALIAS ]; then
 	source $ALIAS
