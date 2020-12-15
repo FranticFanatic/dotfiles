@@ -17,6 +17,5 @@ if [ -t 0 ]; then
 #    fi
 fi
 
-#A simple backup prompt for when Zsh can't load a theme.
+# Set a basic, fallback prompt if I don't load a fancy zsh prompt
 PROMPT="%(?..%F{1}%B[%?]%f%b )%(!..%B%F{4}%n%f%b@)%B%F{2}%m%f%b:%B%F{6}%~%f%b%(!.#.$) "
-
