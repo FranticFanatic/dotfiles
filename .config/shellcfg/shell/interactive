@@ -16,3 +16,7 @@ if [ -t 0 ]; then
 #    if [ `tput colors` -ge 8 ]; then
 #    fi
 fi
+
+#A simple backup prompt for when Zsh can't load a theme.
+PROMPT="%(?..%F{1}%B[%?]%f%b )%(!..%B%F{4}%n%f%b@)%B%F{2}%m%f%b:%B%F{6}%~%f%b%(!.#.$) "
+

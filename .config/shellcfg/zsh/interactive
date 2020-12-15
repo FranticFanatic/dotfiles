@@ -1,1 +1,22 @@
 . ~/.config/shellcfg/shell/interactive
+# Zshell options
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt appendhistory autocd nomatch
+bindkey -e
+
+# Load some modules
+zstyle :compinstall filename '/home/nezumi/.config/shellcfg/zsh/interactive'
+autoload -Uz compinit
+compinit
+autoload -Uz promptinit
+promptinit
+prompt spaceship
+autoload -Uz colors
+colors
+
+export LANG="en_US.UTF-8"
+export TERM="xterm-256color"
+
+
