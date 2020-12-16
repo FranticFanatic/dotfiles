@@ -1,0 +1,5 @@
+#! /bin/sh
+echo "Waking up Krunch..."
+#sudo wol -i 192.168.99.3 -w 50 00:1a:92:be:75:05
+wol 00:1a:92:be:75:05
+wol 00:1a:92:be:6c:aa
