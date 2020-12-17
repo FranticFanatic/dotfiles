@@ -19,4 +19,4 @@ colors
 export LANG="en_US.UTF-8"
 export TERM="xterm-256color"
 
-
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
