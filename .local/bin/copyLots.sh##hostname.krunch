@@ -1,0 +1,3 @@
+#!/bin/sh
+modprobe sg
+systemctl start arm@sr0.service
