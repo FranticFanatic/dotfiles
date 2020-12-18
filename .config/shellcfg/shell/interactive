@@ -8,14 +8,14 @@ if [ -f $ALIAS ]; then
 fi
 
 # if in a terminal
-if [ -t 0 ]; then
+#if [ -t 0 ]; then
     # other users shouldn't be able to message by default
-    mesg n
+    #mesg n
 
     # enable colours
 #    if [ `tput colors` -ge 8 ]; then
 #    fi
-fi
+#fi
+# Set a basic bash prompt
+export PS1="\u@\h:\w\\$ "
 
-# Set a basic, fallback prompt if I don't load a fancy zsh prompt
-PROMPT="%(?..%F{1}%B[%?]%f%b )%(!..%B%F{4}%n%f%b@)%B%F{2}%m%f%b:%B%F{6}%~%f%b%(!.#.$) "

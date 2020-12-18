@@ -6,6 +6,9 @@ SAVEHIST=1000
 setopt appendhistory autocd nomatch
 bindkey -e
 
+# Set a basic, fallback prompt if I don't load a fancy zsh prompt
+PROMPT='%(?..%F{1}%B[%?]%f%b )%(!..%B%F{4}%n%f%b@)%B%F{2}%m%f%b:%B%F{6}%~%f%b%(!.#.$) '
+
 # Load some modules
 zstyle :compinstall filename '/home/nezumi/.config/shellcfg/zsh/interactive'
 autoload -Uz compinit
