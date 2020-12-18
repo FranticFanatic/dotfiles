@@ -1,0 +1,2 @@
+#!/bin/bash
+yay -S yadm exa zsh-autosuggestions zsh-syntax-highlighting spaceship-prompt antibody
