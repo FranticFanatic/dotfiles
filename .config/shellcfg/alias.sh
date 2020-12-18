@@ -1,5 +1,8 @@
 # Aliases!
 
+# check for dotfile updates
+alias yadmUpdate='yadm remote update && yadm status'
+
 # exa instead of ls
 alias ls='exa --color=auto'
 alias la='exa -la --color=auto'
