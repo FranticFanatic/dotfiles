@@ -10,12 +10,13 @@ bindkey -e
 PROMPT='%(?..%F{1}%B[%?]%f%b )%(!..%B%F{4}%n%f%b@)%B%F{2}%m%f%b:%B%F{6}%~%f%b%(!.#.$) '
 
 # Load some modules
+# (Antibody testing)
 zstyle :compinstall filename '/home/nezumi/.config/shellcfg/zsh/interactive'
 autoload -Uz compinit
 compinit
-autoload -Uz promptinit
-promptinit
-prompt spaceship
+#autoload -Uz promptinit
+#promptinit
+#prompt spaceship
 autoload -Uz colors
 colors
 
@@ -23,5 +24,8 @@ export LANG="en_US.UTF-8"
 export TERM="xterm-256color"
 
 # And let's finish it off with some plugins
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+#source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Load antibody
+source <(antibody init)
+antibody bundle < ~/.config/shellcfg/zsh_plugins.txt
