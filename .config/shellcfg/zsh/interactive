@@ -3,7 +3,7 @@
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
-setopt appendhistory autocd nomatch
+setopt appendhistory autocd nomatch COMPLETE_ALIASES
 bindkey -e
 
 # Set a basic, fallback prompt if I don't load a fancy zsh prompt
