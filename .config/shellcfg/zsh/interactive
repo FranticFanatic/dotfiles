@@ -23,6 +23,9 @@ colors
 export LANG="en_US.UTF-8"
 export TERM="xterm-256color"
 
+# spaceship options
+export SPACESHIP_EXIT_CODE_SHOW=true
+
 # And let's finish it off with some plugins
 #source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 #source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
